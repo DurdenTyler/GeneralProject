@@ -663,7 +663,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 5000
+  m_ColorTemperature: 6269
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -2209,6 +2209,8 @@ MonoBehaviour:
   _particleSystemFinishOfShot: {fileID: 1916001394049840494, guid: 01b0e23ceb3a649b1a4ee1b1be4ba55e,
     type: 3}
   _particleSystemFlashPoint: {fileID: 1113763084361664545, guid: 4d3b6ba2ab4b94cc7af202e8ba1b8878,
+    type: 3}
+  _bulletMarkPrefab: {fileID: 5657949768180445846, guid: 15b0269c421a34bb289fc4d961478138,
     type: 3}
 --- !u!1 &1413552634
 GameObject:

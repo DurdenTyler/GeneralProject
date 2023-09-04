@@ -12,6 +12,7 @@ public class Weapon : MonoBehaviour
     //[SerializeField] private float _damage = 20;
     [SerializeField] private GameObject _particleSystemFinishOfShot;
     [SerializeField] private GameObject _particleSystemFlashPoint;
+    [SerializeField] private GameObject _bulletMarkPrefab;
 
 
     private void Update()
@@ -28,6 +29,8 @@ public class Weapon : MonoBehaviour
                 var rigidbody = hit.transform.gameObject.GetComponent<Rigidbody>();
 
                 Instantiate(_particleSystemFinishOfShot, hit.point, Quaternion.LookRotation(hit.normal, Vector3.up));
+
+                Instantiate(_bulletMarkPrefab, hit.point, Quaternion.LookRotation(hit.normal, Vector3.forward), hit.transform);
 
                 if (rigidbody == null)
                 {
